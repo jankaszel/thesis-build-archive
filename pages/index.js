@@ -10,7 +10,7 @@ const Index = () => (
     </Head>
 
     <p>
-      These are the latest Pandoc/LaTeX builds of my master's thesis, ordered
+      These are the latest Pandoc builds of my master's thesis, ordered
       chronologically.
     </p>
 
