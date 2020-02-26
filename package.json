@@ -1,0 +1,33 @@
+{
+  "name": "thesis-build-archive",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Jan Kaßel <jan@kassel.works>",
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "build-metadata": "build.js",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/falafeljan/thesis-build-archive.git"
+  },
+  "keywords": [
+    "latex",
+    "archive"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/falafeljan/thesis-build-archive/issues"
+  },
+  "homepage": "https://github.com/falafeljan/thesis-build-archive#readme",
+  "devDependencies": {
+    "next": "^9.2.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}
