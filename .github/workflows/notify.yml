@@ -1,0 +1,23 @@
+name: Notify
+
+on:
+  push:
+    paths:
+      - "builds.json"
+    branches:
+      - master
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - run: npm ci
+      - run: ./mail.js
+        env:
+          SENDGRID_TOKEN: ${{ secrets.SENDGRID_TOKEN }}
+          MAIL_RECIPIENT: ${{ secrets.MAIL_RECIPIENT }}
+          ARCHIVE_HOST: ${{ secrets.ARCHIVE_HOST }}
