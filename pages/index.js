@@ -11,7 +11,7 @@ const Index = () => (
 
     <p>
       These are the latest Pandoc builds of my master's thesis, ordered
-      chronologically.
+      chronologically:
     </p>
 
     <ul>
