@@ -3,8 +3,10 @@ import { useRouter } from "next/router";
 import builds from "../builds.json";
 
 const Latest = () => {
-  const router = useRouter();
-  router.push(`/${builds.shift().filename}`);
+  if (typeof window !== "undefined") {
+    const router = useRouter();
+    router.push(`/${builds.shift().filename}`);
+  }
 
   return null;
 };
