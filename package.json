@@ -25,11 +25,11 @@
   },
   "homepage": "https://github.com/falafeljan/thesis-build-archive#readme",
   "devDependencies": {
-    "@sendgrid/mail": "^6.5.3",
+    "@sendgrid/mail": "^6.5.5",
     "minimatch": "^3.0.4",
-    "next": "^9.3.2",
-    "nodegit": "^0.26.4",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "next": "^9.3.5",
+    "nodegit": "^0.26.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
